@@ -1,12 +1,66 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 body{
    font-family: 'Jost', sans-serif;
    font-family: 'Poppins', sans-serif;
    font-family: 'Roboto', sans-serif;
+  
 }
 .wrapper{
    max-width: 1400px;
    width: 100%;
    margin: 0 auto;
+   background: #F8F3E9;
+}
+header{
+   padding-bottom: 100px;
 }
 header li{
    font-family: 'Playfair Diaplay';
@@ -58,5 +112,106 @@ header .header{
 header .header .burger{
    display: flex;
    justify-content: space-between;
-   width: 46px;
+   width: 105px;
+   padding-left: 0;
+   list-style-type: none;
+
 }
+header .header .burger img{
+   cursor: pointer;
+}
+.container-1{
+   display: flex;
+   justify-content: space-between;
+}
+.container-1 .circle-1{
+   width: 734px;
+   height: 522px;
+   margin-left: -75px;
+   background: url(<path-to-image>), lightgray -19.188px 0px / 102.776% 100% no-repeat;
+   mix-blend-mode: multiply;
+}
+.container-1 .name-cont-1{
+   font-family: 'Noto Serif JP';
+   font-size: 90px;
+   font-style: normal;
+   font-weight: 600;
+   line-height: 130%;
+   color: var(--2-c-2-a-2-b, #2C2A2B);
+   text-shadow: 0px 4px 4px rgba(0,0, 0, 0.25);
+   max-width: 645px;
+   margin: -80px 0 82px 0;
+}
+.container-1 .common{
+   display: flex;
+   justify-content: space-between;
+   max-width: 372px;
+   margin-bottom: 254px;
+}
+.container-1 .common .gold, .container-1 .common .silver{
+   width: 156px;
+   /* margin-bottom: 10px; */
+}
+.container-1 .common .gold > h5, .container-1 .common .silver > h5{
+   font-family: 'Noto Serif JP';
+   font-size: 20px;
+   font-weight: 600;
+   line-height: normal;
+   color: var(--2-c-2-a-2-b, #2C2A2B);
+   text-transform: capitalize;
+   margin: 0;
+   margin-bottom: 10px;
+}
+.container-1 .common p{
+   font-family: 'Gilroy-Medium';
+   font-size: 12px;
+   font-weight: 400;
+   color: var(--3-d-3-d-3-f, #3D3D3F);
+}
+.circle-2{
+   background: #F8F3E9;
+}
+.container-1 .circle-2 .circle-right{
+   font-family:'Noto Serif JP';
+   font-size: 34px;
+   font-weight: 500;
+   color: var(--2-c-2-a-2-b, #2C2A2B);
+   margin-bottom: 10px;
+}
+.container-1 .circle-2 > p{
+   color: var(--3-d-3-d-3-f, #3D3D3F);
+   font-family: 'Gilroy-Medium';
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 150%;
+   /* width: 354px; */
+}
+.container-1 .circle-2 .circle-two{
+   margin: -16px 0 0 -101px;
+   background: url(<path-to-image>), lightgray -128.788px 0px / 138.792% 100% no-repeat;
+   mix-blend-mode: multiply;
+}
+.circles{
+   display: flex;
+   width: 20px;
+}
+.circles-right{
+   display: flex;
+
+}
+.icon-smoll{
+   display: flex;
+   flex-direction: column;
+   flex-basis: 24px;
+   /* width: 425px; */
+   height: 425px;
+   margin-top: 135px;
+}
+.vert{
+   display: block;
+   margin-bottom: 20px;
+}
+.scroll{
+   margin-top: 173px;
+}
+/* 193-20=173 */
