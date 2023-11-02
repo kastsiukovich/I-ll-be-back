@@ -90,7 +90,13 @@ header .menu > li > a{
    font-weight: 400;
    font-size: 14px;
    color: #2c2a2b;
+   cursor: pointer;
 }
+/* header .menu > li > a:hover{
+   transition: 0.5s;
+   transform: scale(1.2);
+   /* color: ; */
+/* } */ 
 header .menu{
    display: flex;
    justify-content: space-between;
@@ -103,6 +109,7 @@ header .menu{
 header .menu > li{
    list-style-type: none;
    padding-left: 50px;
+
 }
 header .menu li:first-child{
    padding-left: 0;
@@ -218,6 +225,11 @@ header .header .burger img{
 .vert{
    display: block;
    margin-bottom: 20px;
+   cursor: pointer;
+}
+.vert:hover{
+   transition: 0.5s;
+   transform: scale(1.2);
 }
 .scroll{
    margin-top: 173px;
@@ -227,6 +239,11 @@ header .header .burger img{
 }
 .video img{
    margin: 364px 15px auto auto;
+   cursor: pointer;
+}
+.video img:hover{
+   transition: 0.5s;
+   transform: scale(1.2);
 }
 .video-text{
    margin-right: 60px;
@@ -287,6 +304,22 @@ header .header .burger img{
    font-family: Gilroy-Regular;
    font-size: 20px;
    font-weight: 400;
+   
+}
+.s:hover{
+cursor: pointer;
+transform: scale(1.2);
+transition: 0.5s;
+}
+.m:hover{
+   cursor: pointer;
+   transform: scale(1.2);
+   transition: 0.5s;
+}
+.l:hover{
+   cursor: pointer;
+   transform: scale(1.2);
+   transition: 0.5s;
 }
 .button{
    display: flex;
@@ -302,4 +335,43 @@ header .header .burger img{
    font-size: 20px;
    font-weight: 400;
    text-transform: uppercase;
+   cursor: pointer;
+}
+.button>button:hover{
+   color: var(--3-d-3-d-3-f, #3D3D3F);
+   background-color: #FFF;
+   transition: 0.5s;
+   transform: scale(1.05);
+}
+.price{
+   color:  var(--2-c-2-a-2-b, #2b2a2c);
+   font-family: 'Noto Serif JP';
+   font-size: 36px;
+   font-weight: 900;
+   align-self: center;
+}
+
+.container-2{
+   padding-bottom: 65px;
+
+}
+.container-3{
+   display: flex;
+   justify-content: space-around;
+}
+.cont-3-goldring{
+   /* margin-left: 82px; */
+}
+.cont-3-gold-color{
+   font-family: 'Noto Serif JP';
+   font-size: 48px;
+   font-weight: 700;
+   letter-spacing: 2.4px;
+   color: var(--2-c-2-a-2-b, #2C2A2B);
+   text-shadow: unset;
+   margin-bottom: 30px;
+}
+.container-3 > const{
+   margin-right: 45px;
+
 }
