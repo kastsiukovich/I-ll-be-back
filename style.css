@@ -28,6 +28,16 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+.hidden{
+   display: none;
+}
+.visible{
+   display: visible;
+}
+
+
+
 body {
 	line-height: 1;
 }
@@ -121,6 +131,7 @@ header .header .burger{
    display: flex;
    justify-content: space-between;
    width: 105px;
+   /* width: 300px; */
    padding-left: 0;
    list-style-type: none;
 
@@ -128,6 +139,42 @@ header .header .burger{
 header .header .burger img{
    cursor: pointer;
 }
+
+
+.my-search{
+   display: flex;
+   align-items: center;
+   /* justify-content: space-between; */
+   border: 1px solid azure;
+   border-radius: 7px;
+   background-color: azure;
+   position: absolute;
+   top: 17px;
+   right: 150px;
+   transition: 1s;
+   opacity: 0;
+}
+.gg{
+   display: flex;
+   align-items: center;
+   /* max-width: 500px; */
+}
+.gg>input{
+   border-radius: 7px;
+   border: 0px solid azure;
+   max-width: 500px;
+   background-color: azure;
+}
+.gg>botton{
+   margin: 0 7px 0 7px;
+}
+#x{
+   padding-right: 7px;
+   cursor: pointer;
+}
+
+
+
 .container-1{
    display: flex;
    justify-content: space-between;
@@ -416,6 +463,29 @@ max-width: 500px;
 
 }
 
+/*container 7*/
+
+.container-7{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.companys{
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   padding: 0 0 160px 0;
+}
+.trusting{
+   align-self: center;
+   margin: 0 0 50px 0;
+   color: var(--primary, #3D3D3F);
+   text-align: center;
+   font-family: Gilroy-Medium;
+   font-size: 44px;
+   font-weight: 400;
+}
+
 
 @media screen and (max-width: 1350px){
    .wrapper2{
@@ -467,9 +537,6 @@ max-width: 500px;
    }
 }
 @media screen and (max-width: 1000px){
-   /* .container-1-wrapper{
-      width: 500px;
-   }*/
    .container-1 .circle-2 .circle-two{
       width: 500px;
    } 
