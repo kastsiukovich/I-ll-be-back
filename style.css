@@ -35,6 +35,10 @@ footer, header, hgroup, menu, nav, section {
 .visible{
    display: visible;
 }
+.visible-flex{
+   display: flex; 
+   flex-direction: column
+}
 
 
 

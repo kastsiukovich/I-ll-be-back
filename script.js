@@ -6,35 +6,49 @@ let search2 = document.getElementsByClassName('search-2')[0];
 let submit1 = document.getElementsByClassName('submit-1')[0];
 let searchInput = document.getElementsByClassName('search')[0];
 let burger1 = document.getElementsByClassName('burger1')[0];
-
+let menu = document.getElementsByClassName('menu')[0];
 function f(v, i, a) {
    console.log(v, i, a)
 }
 
 function showBurger() {
-   let menu = document.querySelector('.menu');
+
    let liMenu0 = document.querySelectorAll('.padd')[0];
    let liMenu1 = document.querySelectorAll('.padd')[1];
    let liMenu2 = document.querySelectorAll('.padd')[2];
    let liMenu3 = document.querySelectorAll('.padd')[3];
-   
-   function enumeration(liMenu) {
-      // console.log(menu.style.display === 'none')
+
+
+   let mq = window.matchMedia('(max-width: 650px)');
+   console.log(mq)
+   if (menu.classList == 'menu' && mq.matches == true) {
+      menu.classList.add('visible-flex');
+      menu.style.cssText = `display: flex; 
+      flex-direction: column;`
       liMenu0.style.padding = '0 0 0 0';
       liMenu1.style.padding = '0 0 0 0';
       liMenu2.style.padding = '0 0 0 0';
       liMenu3.style.padding = '0 0 0 0';
+      
+   } else if (mq.matches == true) {
+      menu.classList.remove('visible-flex');
+      menu.style.cssText = `display: none; 
+      flex-direction: row;`
+     
    }
-   enumeration()
-
-   // menu.classList.toggle = '.visible';
-   menu.style.cssText = `display: flex; 
-   flex-direction: column;`
-
-   
-
 }
-burger1.addEventListener('click', showBurger);
+function showLi() {
+   let mq1 = window.matchMedia('(min-width: 651px)');
+
+   if (mq1.matches === true) {
+      // console.log(mq1.matches)
+      menu.style.cssText = `display: flex; 
+      flex-direction: row; padding-left: 50px;`
+   } else {
+      menu.style.cssText = 'display: none;';
+   }
+}
+showLi()
 
 function closeSearch(el) {
    mySearch.className = '';
@@ -57,7 +71,7 @@ function clearInput(e) {
    // console.log(inputValue);
    searchInput.value = '';
 }
-
+burger1.addEventListener('click', showBurger);
 submit1.addEventListener('click', clearInput);
 search2.addEventListener('click', show);
 elClose.addEventListener('click', closeSearch);
